@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TRIXY</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="title-logo">
+                <h1 class="title">трусики</h1>
+                <img class="logo" src="/image/logo.png" alt="TRICKY">
+                <div class="rectangle"></div>  
+                <a class="link" href="https://nixybrand.ru/">https://nixybrand.ru/</a>  
+                <div class="fonts">
+                    <h4>шрифт <span>gilroy</span></h4>
+                    <h4 class="light">Light</h4>
+                    <h4><span>ExtraBold</span></h4>
+                </div>
+            </div>
+            <div class="title-biglogo">
+                <img src="/image/biglogo.jpg" alt="biglogo" class="biglogo">
+            </div>
+        </div>
+    </header>
+    <section class="question">
+        <h2 class="title-question">Для чего вообще нужны такие трусики?</h2>
+        <h3 class="mini-title-question">Выбери ситуацию, которая подходит тебе:</h3>
+        <div class="options" id="options">
+            <a href="#.question" class="btn-answer opt1" data-btn="1"><img class="ques-img" src="/image/blood.png" alt="blood">Для месячных</a>
+            <a href="#.question" class="btn-answer opt2 active" data-btn="2"><img class="ques-img" src="/image/water.png" alt="water">При недержании</a>
+            <a href="#.question" class="btn-answer opt3" data-btn="3"><img class="ques-img" src="/image/mother.png" alt="mother">Во время беременности</a>
+        </div>
+        <div class="options-answer">
+            <div class="option-answers" data-option="1">
+                    <h4 class="option-title" data-title="1">Во время месячных, когда…</h4>
+                    <p class="option-text1-1">Утром просыпаешься с пятнами на постели</p>
+                    <p class="option-text2-1">Весь рабочий день переживаешь о протечке</p>
+                    <p class="option-text3-1">В поездке, походе, на выступлении, где нет туалета</p>
+                    <p class="option-text4-1">Отказываешь себе в физических нагрузках</p>
+            </div>
+            <div class="option-answers active" data-option="2">
+                    <h4 class="option-title active" data-title="2">При недержании, когда...</h4>
+                    <p class="option-text1-2">Приходится контролировать смех, кашель, чихание</p>
+                    <p class="option-text2-2">Боишься свободно прыгать, бегать, танцевать</p>
+                    <p class="option-text3-2">Когда просыпаешьсяна влажной постели</p>
+                    <p class="option-text4-2">Не можешь поднимать тяжести</p>
+            </div>
+            <div class="option-answers" data-option="3">
+                    <h4 class="option-title" data-title="3">Во время беременности, когда…</h4>
+                    <p class="option-text1-3">Начинаются выделения из-за гормональных изменений</p>
+                    <p class="option-text2-3">Недержание из-за давления матки на мочевой пузырь</p>
+                    <p class="option-text3-3">Случается подтекания при движении ребенка</p>
+                    <p class="option-text4-3">Идут послеродовые кровяные и гормональные выделения</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-test">
+        <div class="container-quiz">
+            <h2 class="title-quiz">Пройди тест и подбери трусики, которые тебе лучше всего подойдут</h2>
+            <div class="wrapper-quiz" id="quiz">
+                <div class="quiz active">
+                    <h4 class="question" id="question"></h4>
+                    <div class="answers">
+                        <a href="#.section-test" class="btn-answer answer answer1" data-id="0"></a>
+                        <a href="#.section-test" class="btn-answer answer answer2" data-id="1"><img class="ques-img water" src="/image/water.png" alt="water"></a>
+                        <a href="#.section-test" class="btn-answer answer answer3" data-id="2"><img class="ques-img mother" src="/image/mother.png" alt="mother"></a>
+                    </div>
+                    <a href="#.section-test" class="btn-answer btn-next" id="btn-next">Следующий вопрос</a>
+                </div>
+                <div class="quiz-restart">
+                    <h4 class="question">Тебе однозначно подходят наши трусики!</h4>
+                    <a href="#.section-test" class="btn-answer btn-next" id="btn-restart">Пройти опрос заново</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fox">
+        <img src="/image/fox.png" alt="fox">
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>

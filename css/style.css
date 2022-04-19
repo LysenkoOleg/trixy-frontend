@@ -1,0 +1,441 @@
+@font-face { 
+    font-family: "GilroyLight";
+    src: url("../fonts/GilroyLight.eot");
+    src: url("../fonts/GilroyLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GilroyLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "GilroyMedium";
+    src: url("../fonts/GilroyMedium.eot");
+    src: url("../fonts/GilroyMedium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GilroyMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: "GilroySemiBold";
+    src: url("../fonts/GilroySemiBold.eot");
+    src: url("../fonts/GilroySemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GilroySemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face { 
+    font-family: "GilroyBold";
+    src: url("../fonts/GilroyBold.eot");
+    src: url("../fonts/GilroyBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GilroyBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face { 
+    font-family: "GilroyExtraBold";
+    src: url("../fonts/GilroyExtraBold.eot");
+    src: url("../fonts/GilroyExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GilroyExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+h1, h3, h5, h6, p {
+    font-family: "GilroyLight", Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: "GilroyMedium", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: "GilroyBold", Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-family: "GilroySemiBold", Arial, Helvetica, sans-serif;
+}
+
+span {
+    font-family: "GilroyExtraBold", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1527px;
+    margin: 0px auto;
+}
+
+.title-biglogo {
+    display: flex; 
+    align-items: center;
+}
+
+.container-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1527px;
+    margin: 0px auto;
+}
+
+.title {
+    color: #fff;
+    font-size: 120px;
+    margin-top: 107px;
+}
+
+.logo {
+    width: 484px;
+    height: 121px;
+    margin-top: 63px;
+}
+
+.biglogo {
+    width: 729px;
+    height: 510px;
+}
+
+.rectangle {
+    width: 329px;
+    height: 25px;
+    background-color: #fff;
+    margin-top: 217px;
+    margin-left: 5px;
+}
+
+.link {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 55px;
+    display: inline-block;
+}
+
+.fonts {
+    margin-top: 55px;
+    margin-bottom: 62px;
+    font-size: 40px;
+    color: #F2F2F2;
+    width: 240px;
+}
+
+.fonts .light {
+    padding-top: 49px;
+}
+
+.wrapper-quiz {
+    width: 560px;
+    height: 364px;
+    border-radius: 15px;
+    box-shadow: -6px 11px 38px #272727;
+    margin-bottom: 172px;
+}
+
+.fox {
+    max-width: 1515px;
+    margin: 0 auto;
+}
+
+.quiz {
+    display: none;
+}
+
+.quiz-restart {
+    display: none;
+}
+
+.quiz.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 276px;
+    padding-top: 44px;
+}
+
+.quiz-restart.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 276px;
+    padding-top: 44px;
+}
+
+.title-quiz {
+    width: 960px;
+    height: 150px;
+    color: #000;
+    font-size: 50px;
+    margin: 0 auto 42px auto;
+    text-align: center;
+}
+
+.question {
+    color: #000;
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.answers .btn-answer {
+    margin-bottom: 8px;
+}
+
+.btn-answer {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 346px;
+    height: 44px;
+    border: 2px solid #525252;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-answer.answer:focus {
+    background: #E0E0E0;
+}
+
+.btn-answer.answer:hover
+{
+    border-color: #E0E0E0;
+}
+
+.btn-next {
+    background: #FFCC00;
+}
+
+.btn-answer.active {
+    background: #FFCC00;
+}
+
+.answers.btn-next {
+    margin-top: 16px;
+}
+
+.ques-img {
+    padding-right: 8px;
+}
+
+.title-question {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 116px;
+}
+
+.mini-title-question {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 678px;
+    margin-top: 53px;
+    margin-bottom: 51px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.options-answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1048px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 122px;
+}
+
+.opt1 {
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+.opt2 {
+    border-radius: 0;
+    border: 2px solid #272727;
+}
+
+.opt3 {
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+}
+
+.option-answers {
+    width: 320px;
+    height: 369px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 17px;
+    border-radius: 15px;
+    box-shadow: -6px 11px 38px #27272752;
+    opacity: 50%;
+}
+
+.option-answers.active {
+    width: 346px;
+    height: 486px;
+    padding: 44px 17px;
+    opacity: 100%;
+}
+
+.option-title {
+    font-size: 18px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.option-title.active {
+    font-size: 24px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.option-text1-1 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: url(/image/options1/15.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text2-1 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: url(/image/options1/image\ 17.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text3-1 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: url(/image/options1/16.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text4-1 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options1/image\ 18.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text1-2 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options2/20.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text2-2 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options2/image\ 19.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text3-2 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options2/18.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text4-2 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options2/image\ 21.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text1-3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: url(/image/options3/14.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text2-3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: url(/image/options3/16.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text3-3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    background: url(/image/options3/15.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.option-text4-3 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options3/image\ 13.png) no-repeat top left;
+    padding-left: 41px;
+    height: 54px;
+    line-height: 27px;
+}
+
+.opt-image {
+    padding-left: 24px;
+}
+
+.small {
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: url(/image/options2/image\ 21.png) no-repeat top left;
+}
